@@ -23,5 +23,9 @@ const messages = [
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Mini Messageboard", messages: messages });
 });
+router.get("/new", (req, res, next) => {
+  res.render("form", { title: "New message" });
+});
+router.post("/new", (req, res) => {});
 
 module.exports = router;
