@@ -11,7 +11,7 @@ var usersRouter = require("./routes/users");
 var app = express();
 dotenv.config();
 
-console.log(process.env.DB_USER, process.env.DB_PASS, process.env.TESTE);
+// console.log(process.env.DB_USER, process.env.DB_PASS, process.env.TESTE);
 // mongoose connection
 const mongoose = require("mongoose");
 const mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@expresslocallibrary.46fkx7d.mongodb.net/?retryWrites=true&w=majority`;

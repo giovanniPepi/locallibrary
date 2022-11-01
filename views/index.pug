@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  a(href="/new") 
+    button.addBtn(type="button") Add New Message
+  h1=title
+  each message in messages
+    section.messages
+      li= message.text + ' This is ' + message.user + ' and I was added at ' + message.added
+      p= ''
