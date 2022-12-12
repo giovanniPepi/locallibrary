@@ -1,10 +1,3 @@
 extends layout
 
 block content
-  a(href="/new") 
-    button.addBtn(type="button") Add New Message
-  h1=title
-  each message in messages
-    section.messages
-      li= message.text + ' This is ' + message.user + ' and I was added at ' + message.added
-      p= ''
